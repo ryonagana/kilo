@@ -1182,6 +1182,8 @@ void editorProcessKeypress(int fd) {
             quit_times--;
             return;
         }
+	/* clear the screen  before quit */
+	system("clear");
         exit(0);
         break;
     case CTRL_S:        /* Ctrl-s */
